@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.modal.left .modal-dialog {
+  position: fixed;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal.left .modal-content {
+  height: 100%;
+  overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.modal.right.fade .modal-dialog {
+  left: -320px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #eeeeee;
+  background-color: #fafafa;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+body {
+  background-color: #f4f7f8;
+}
+
+.demo {
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+
+.btn-demo {
+  margin: 15px;
+  padding: 10px 15px;
+  border-radius: 0;
+  font-size: 16px;
+  background-color: #4a424200;
+}
+
+.btn-demo:focus {
+  outline: 0;
+}
+
+.labl {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 0.3em;
+  margin-left: 0.5em;
   color: white;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-bgcolor {
+  background-color: #10d0d0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-bgcolor {
+  background-color: #ececec;
+}
+
+.body-css {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.traits {
+  font-weight: 500;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+}
+
+.dropdown {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+
+.placeholder-font {
+  font-size: 14px;
+}
+
+.txt-last {
+  text-align: end !important;
+}
+
+.addschema {
+  color: #008080;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
